@@ -8,38 +8,54 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat|Varela+Round&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
-		<div class="main-carousel">
-		  <div class="carousel-cell" id="carousel-cell1" style="background-image: url('images/cuba.jpeg');">
-		  	<div class="container">
-		  		<p>Cuba - the island of dance</p>
-		  	</div>
-		  </div>
-		  <div class="carousel-cell" id="carousel-cell2" style="background-image: url('images/rome.jpeg');">
-		  	<div class="container">
-		  		<p>Rome - the cradle of civilization</p>
-		  	</div>
-		  </div>
-		  <div class="carousel-cell" id="carousel-cell3" style="background-image: url('images/corfu.jpg');">
-		  	<div class="container">
-		  		<p>Corfu - the greenest of Greek islands</p>
-		  	</div>
-		  </div>
-		  <div class="carousel-cell" id="carousel-cell4" style="background-image: url('images/paris.jpg');">
-		  	<div class="container">
-		  		<p>Paris - the city of love</p>
-		  	</div>
-		  </div>
-		  <div class="carousel-cell" id="carousel-cell5" style="background-image: url('images/cracow.jpg');">
-		  	<div class="container">
-		  		<p>Cracow - the royal city</p>
-		  	</div>
-		  </div>
+		<div class="main-carousel" id="main-carousel">
 		</div>
 		<div class="progress-bar"></div>
 		<button class="restart-btn">Return to beggining</button>
 
+	<script id="template-cell" type="x-tmpl-mustache">	
+			<div class="carousel-cell" style="background-image: url({{ image }});">
+			  	<div class="container">
+			  		<p> {{ title }} <p>
+			  		{{{ description }}}
+			  	</div>
+			</div>
+	</script>	
+
+  	<script>
+  		var slides = [ 
+			{
+				image: "images/cuba.jpeg",
+				title: "Cuba - the island of dance",
+				description: "<p>Lorem ipsum dolor sit.</p>"
+			},
+			{
+				image: 'images/rome.jpeg',
+				title: 'Rome - the cradle of civilization',
+				description: "<p>Lorem ipsum dolor sit.</p>"
+			},
+			{
+				image: 'images/corfu.jpg',
+				title: 'Corfu - the greenest of Greek islands',
+				description: "<p>Lorem ipsum dolor sit.</p>"
+			},
+			{
+				image:'images/paris.jpg',
+				title: 'Paris - the city of love',
+				description: "<p>Lorem ipsum dolor sit.</p>"
+			},
+			{
+				image: 'images/cracow.jpg',
+				title: 'Cracow - the royal city',
+				description: "<p>Lorem ipsum dolor sit.</p>"
+			},
+		];
+		</script>
+
+
 		<script src="vendor/flickity.pkgd.min.js"></script>
 		<script src="vendor/hash.js"></script>
+		<script src="vendor/mustache.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
