@@ -10,11 +10,16 @@
 		.container {
 		max-width: 1200px;
 			p {
+				text-align: center;
 				color: #fff;
 				font-weight: 600;
 				font-size: 46px;
 				text-shadow: 5px 4px 4px  black;
 				font-family: 'Montserrat', sans-serif;
+			}
+			h1 {
+				@extend p;
+				font-size: 50px;
 			}
 	}
 }

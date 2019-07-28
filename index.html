@@ -14,9 +14,9 @@
 		<button class="restart-btn">Return to beggining</button>
 
 	<script id="template-cell" type="x-tmpl-mustache">	
-			<div class="carousel-cell" style="background-image: url({{ image }});">
+			<div class="carousel-cell" style="background-image: url({{ image }})">
 			  	<div class="container">
-			  		<p> {{ title }} <p>
+			  		<h1> {{ title }} </h1>
 			  		{{{ description }}}
 			  	</div>
 			</div>
@@ -25,37 +25,36 @@
   	<script>
   		var slides = [ 
 			{
-				image: "images/cuba.jpeg",
-				title: "Cuba - the island of dance",
-				description: "<p>Lorem ipsum dolor sit.</p>"
+				image: 'images/cuba.jpeg',
+				title: 'Cuba',
+				description: '<p>the island of dance</p>'
 			},
 			{
 				image: 'images/rome.jpeg',
-				title: 'Rome - the cradle of civilization',
-				description: "<p>Lorem ipsum dolor sit.</p>"
+				title: 'Rome',
+				description: '<p>the cradle of civilization</p>'
 			},
 			{
 				image: 'images/corfu.jpg',
-				title: 'Corfu - the greenest of Greek islands',
-				description: "<p>Lorem ipsum dolor sit.</p>"
+				title: 'Corfu',
+				description: '<p>the greenest of Greek islands</p>'
 			},
 			{
 				image:'images/paris.jpg',
-				title: 'Paris - the city of love',
-				description: "<p>Lorem ipsum dolor sit.</p>"
+				title: 'Paris',
+				description: '<p>the city of love</p>'
 			},
 			{
 				image: 'images/cracow.jpg',
-				title: 'Cracow - the royal city',
-				description: "<p>Lorem ipsum dolor sit.</p>"
+				title: 'Cracow',
+				description: '<p>the royal city</p>'
 			},
 		];
 		</script>
 
-
+		<script src="vendor/mustache.js"></script>
 		<script src="vendor/flickity.pkgd.min.js"></script>
 		<script src="vendor/hash.js"></script>
-		<script src="vendor/mustache.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

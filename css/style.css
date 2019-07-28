@@ -13,12 +13,17 @@
   max-width: 1200px;
 }
 
-.carousel-cell .container p {
+.carousel-cell .container p, .carousel-cell .container h1 {
+  text-align: center;
   color: #fff;
   font-weight: 600;
   font-size: 46px;
   text-shadow: 5px 4px 4px  black;
   font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-cell .container h1 {
+  font-size: 50px;
 }
 
 .flickity-page-dots {

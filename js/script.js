@@ -1,17 +1,17 @@
 'use strict';
 (function(){
 
-var templateList = document.getElementById('template-cell').innerHTML;
-Mustache.parse(templateList);
+var templateItem = document.getElementById('template-cell').innerHTML;
+Mustache.parse(templateItem);
 var listSlides = '';
 
 for (var i=0; i < slides.length; i++) {
 	console.log(slides);
-	listSlides += Mustache.render (templateList, slides[i]);
+	listSlides += Mustache.render (templateItem, slides[i]);
 };
 
-var results = getElementById ('main-carousel');
-results.insertAdjacentHTML ("beforeend", listSlides);
+var results = document.getElementById('main-carousel');
+results.insertAdjacentHTML ('beforeend', listSlides);
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
