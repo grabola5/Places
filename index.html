@@ -12,6 +12,7 @@
 		</div>
 		<div class="progress-bar"></div>
 		<button class="restart-btn">Return to beggining</button>
+		<div class="map" id="map"></div>
 
 	<script id="template-cell" type="x-tmpl-mustache">	
 			<div class="carousel-cell" style="background-image: url({{ image }})">
@@ -56,5 +57,6 @@
 		<script src="vendor/flickity.pkgd.min.js"></script>
 		<script src="vendor/hash.js"></script>
 		<script src="js/script.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqxGMTEvxFiIL5opguvaf6akB3fW2SJfY&callback=initMap"></script>
 	</body>
 </html>
