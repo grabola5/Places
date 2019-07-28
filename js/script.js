@@ -32,12 +32,20 @@ flkty.on( 'scroll', function( progress ) {
 });
 
 window.initMap = function () {
-var cracow = {lat: 50.063410, lng: 19.945157};
-var map = new google.maps.Map (
-	document.getElementById('map'), {zoom: 4, center: cracow});
-var marker = new google.maps.Marker ({position: cracow, map: map});
+var cuba = slides[0].coords;
+
+var map = new google.maps.Map (document.getElementById('map'), {
+	zoom: 4,
+	center: cuba
+
+});
+
+	for (var i=0; i>slides.length; i++) {
+	var localization = slides[i].coords;
+	var marker = new google.maps.Marker ({position: localization, map: map});
+}
+
 };
 
-initMap ();
 
 })();
