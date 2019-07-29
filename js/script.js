@@ -37,17 +37,23 @@ var cuba = slides[0].coords;
 var map = new google.maps.Map (document.getElementById('map'), {
 	zoom: 6,
 	center: cuba
-
 });
 
-for (var i=0; i<slides.length; i++) {
+for (let i=0; i<slides.length; i++) {
 	var localization = slides[i].coords;
 	var marker = new google.maps.Marker ({
 		position: localization,
-		map: map
+		map: map,
+		index: i
 	});
+	marker.addListener('click', function () {
+  	flkty.select(i);
+});
 }
 };
-
+// wycentrowanie mapy po zmianie aktywnego slajdu//
+/*flkty.on( 'change', function( index) {
+  
+}); */
 
 })();
