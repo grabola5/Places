@@ -1,53 +1,15 @@
-.carousel-cell {
-  width: 100%;
-  margin-right: 10px;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-}
+.carousel-cell { width: 100%; margin-right: 10px; height: 50vh; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; background-size: cover; background-position: center; }
 
-.carousel-cell .container {
-  max-width: 1200px;
-}
+.carousel-cell .container { max-width: 1200px; }
 
-.carousel-cell .container p, .carousel-cell .container h1 {
-  text-align: center;
-  color: #fff;
-  font-weight: 600;
-  font-size: 46px;
-  text-shadow: 5px 4px 4px  black;
-  font-family: 'Montserrat', sans-serif;
-}
+.carousel-cell .container p, .carousel-cell .container h1 { text-align: center; color: #fff; font-weight: 600; font-size: 46px; text-shadow: 5px 4px 4px  black; font-family: 'Montserrat', sans-serif; }
 
-.carousel-cell .container h1 {
-  font-size: 50px;
-}
+.carousel-cell .container h1 { font-size: 50px; }
 
-.flickity-page-dots {
-  display: none;
-}
+.flickity-page-dots { display: none; }
 
-.progress-bar {
-  height: 15px;
-  width: 0;
-  background-color: #a2aac1;
-}
+.progress-bar { height: 15px; width: 0; background-color: #a2aac1; }
 
-.restart-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: #a2aac1;
-  color: #fff;
-  font-family: 'Varela Round', sans-serif;
-}
+.restart-btn { position: absolute; top: 20px; right: 20px; background-color: #a2aac1; color: #fff; font-family: 'Varela Round', sans-serif; }
 
-.map {
-  height: 50vh;
-  width: 100%;
-}
-
-/*# sourceMappingURL=style.css.map */
+.map { height: 50vh; width: 100%; }

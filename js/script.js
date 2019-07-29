@@ -35,16 +35,18 @@ window.initMap = function () {
 var cuba = slides[0].coords;
 
 var map = new google.maps.Map (document.getElementById('map'), {
-	zoom: 4,
+	zoom: 6,
 	center: cuba
 
 });
 
-	for (var i=0; i>slides.length; i++) {
+for (var i=0; i<slides.length; i++) {
 	var localization = slides[i].coords;
-	var marker = new google.maps.Marker ({position: localization, map: map});
+	var marker = new google.maps.Marker ({
+		position: localization,
+		map: map
+	});
 }
-
 };
 
 
