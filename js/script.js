@@ -15,9 +15,9 @@ results.insertAdjacentHTML ('beforeend', listSlides);
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
-  cellAlign: 'left',
-  contain: true,
-  hash: true
+  	cellAlign: 'left',
+  	contain: true,
+  	hash: true
 });
 
 var restartBtn = document.querySelector('.restart-btn');
@@ -27,19 +27,19 @@ restartBtn.addEventListener ('click', function () {
 var progressBar = document.querySelector('.progress-bar')
 
 flkty.on( 'scroll', function( progress ) {
-  progress = Math.max( 0, Math.min( 1, progress ) );
-  progressBar.style.width = progress * 100 + '%';
+  	progress = Math.max( 0, Math.min( 1, progress ) );
+ 	progressBar.style.width = progress * 100 + '%';
 });
 
 window.initMap = function () {
-var cuba = slides[0].coords;
+	var cuba = slides[0].coords;
 
-var map = new google.maps.Map (document.getElementById('map'), {
+	var map = new google.maps.Map (document.getElementById('map'), {
 	zoom: 6,
 	center: cuba
 });
 
-for (let i=0; i<slides.length; i++) {
+	for (let i=0; i<slides.length; i++) {
 	var localization = slides[i].coords;
 	var marker = new google.maps.Marker ({
 		position: localization,
@@ -50,10 +50,9 @@ for (let i=0; i<slides.length; i++) {
   	flkty.select(i);
 });
 }
+	flkty.on( 'change', function (index) {
+		map.panTo(slides[index].coords);
+	}
+); 
 };
-// wycentrowanie mapy po zmianie aktywnego slajdu//
-/*flkty.on( 'change', function( index) {
-  
-}); */
-
 })();
